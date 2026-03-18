@@ -30,5 +30,7 @@ jobs:
           args: >
             -Dsonar.projectKey=devikasheeja_secure-devops-backend
             -Dsonar.organization=devikasheeja
+            -Dsonar.host.url=https://sonarcloud.io
+           
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

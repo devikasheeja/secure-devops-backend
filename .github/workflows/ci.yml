@@ -20,5 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Simple check
-        run: echo "CI working"
+      - name: Run Snyk scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

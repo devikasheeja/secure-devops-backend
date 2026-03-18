@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run app
-        run: node server.js
+      - name: Check app file
+        run: node -e "require('./server.js')"
